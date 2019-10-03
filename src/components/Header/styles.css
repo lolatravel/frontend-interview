@@ -30,3 +30,7 @@ li {
     cursor: pointer;
     padding-bottom: 7px;
 }
+
+.chevronContainer {
+    margin-left: 5px;
+}

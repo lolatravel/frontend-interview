@@ -1,25 +1,29 @@
 import React, { PureComponent } from 'react';
 import './styles.css';
-import { LolaLogo } from 'components';
+import { LolaLogo } from '../../assets/LolaLogo';
+import { Chevron } from '../../assets/Chevron';
 
 export class HeaderUI extends PureComponent {
     render() {
         return (
             <header>
                 <nav className="headerContainer">
-                    <div class="verticallyCentered">
+                    <div className="verticallyCentered">
                         <LolaLogo />
-                        <ul class="menuList">
+                        <ul className="menuList">
                             <li>
-                                <span class="menuItem">UPCOMING</span>
+                                <span className="menuItem">UPCOMING</span>
                             </li>
                             <li>
-                                <span class="menuItem">PAST</span>
+                                <span className="menuItem">PAST</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="verticallyCentered">
+                    <div className="verticallyCentered">
                         <span>SORT BY DATE</span>
+                        <div className="chevronContainer verticallyCentered">
+                            <Chevron color="#ffffff" />
+                        </div>
                     </div>
                 </nav>
             </header>
