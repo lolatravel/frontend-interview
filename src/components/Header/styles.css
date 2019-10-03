@@ -1,0 +1,36 @@
+.headerContainer {
+    display: flex;
+    height: 85px;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.verticallyCentered {
+    align-items: center;
+    display: flex;
+}
+
+.menuList {
+    display: flex;
+    list-style-type: none;
+}
+
+span {
+    color: white;
+    font-weight: bold;
+}
+li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menuItem:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    padding-bottom: 7px;
+}
+
+.chevronContainer {
+    margin-left: 5px;
+}
