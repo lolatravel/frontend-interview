@@ -5,26 +5,18 @@ import { TripType } from '../../constants';
 
 export class TripCardUI extends PureComponent {
     static propTypes = {
-        trip: PropTypes.arrayOf(TripType),
-        bookerName: PropTypes.string,
-        travelers: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string }))
+        trip: PropTypes.arrayOf(TripType)
     };
 
     static defaultProps = {
-        trip: null,
-        bookerName: null,
-        travelers: []
+        trip: null
     };
 
     render() {
-        const { trip, bookerName, travelers } = this.props;
+        const { trip } = this.props;
         return (
             <div className="tripCard">
-                <img className="tripImage" src={trip.image} alt="trip" />
-                <h3 className="name">{trip.name}</h3>
-                <text>Booked By: {bookerName}</text>
-                <text>Travelers: {travelers}</text>
-                <text className="datesText">{trip.dates}</text>
+                <h3 className="nameText">{trip.name}</h3>
             </div>
         );
     }

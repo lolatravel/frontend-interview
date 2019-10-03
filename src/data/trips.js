@@ -106,48 +106,5 @@ export const tripsData = [
                 hotelName: 'Marriott Downtown'
             }
         ]
-    },
-    {
-        id: '1235324321',
-        name: 'London Trip',
-        dates: 'Sun, 6/21 - Sun, 6/27',
-        nights: 6,
-        bookedBy: {
-            id: '45743252346',
-            firstName: 'Kara',
-            lastName: 'Waters'
-        },
-        travelers: [
-            {
-                id: '45743252346',
-                firstName: 'Kara',
-                lastName: 'Waters'
-            },
-            {
-                id: '1231234112',
-                firstName: 'Alicia',
-                lastName: 'Perez'
-            },
-            {
-                id: '213413256t324',
-                firstName: 'Patrice',
-                lastName: 'Bergeron'
-            },
-            {
-                id: '1345135123',
-                firstName: 'Collin',
-                lastName: 'Mckinney'
-            }
-        ],
-        bookings: [
-            {
-                type: 'flight',
-                airline: 'Delta'
-            },
-            {
-                type: 'hotel',
-                hotelName: 'Marriott Downtown'
-            }
-        ]
     }
 ];
