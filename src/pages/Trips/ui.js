@@ -18,7 +18,7 @@ export class TripsUI extends PureComponent {
         return (
             <>
                 <Header />
-                <div>
+                <div className="tripsContainer">
                     <div className="tripsColumn">
                         {trips.map(trip => (
                             <TripCard trip={trip} />

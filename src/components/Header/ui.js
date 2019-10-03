@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import './styles.css';
-import { LolaLogo } from '../../assets/LolaLogo';
 import { Chevron } from '../../assets/Chevron';
 
 export class HeaderUI extends PureComponent {
@@ -9,7 +8,6 @@ export class HeaderUI extends PureComponent {
             <header>
                 <nav className="headerContainer">
                     <div className="verticallyCentered">
-                        <LolaLogo />
                         <ul className="menuList">
                             <li>
                                 <span className="menuItem">UPCOMING</span>

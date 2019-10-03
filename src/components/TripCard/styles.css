@@ -1,17 +1,35 @@
 .tripCard {
     width: 100%;
     margin-top: 8px;
-    padding: 12px;
+    padding: 18px;
+    border-bottom: 1px solid #888;
     background-color: white;
-    display: block;
+    box-sizing: border-box
 }
 
-.image {
+.tripImage {
     width: 100%;
-    height: 150px;
-    background-color: gray;
+    height: 180px;
+    margin-bottom: 8px;
+}
+
+.nameText {
+    margin: 0;
+}
+
+.uppercase{
+    color: #888;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.datesText {
+    color: #888;
+    font-weight: 700;
 }
 
 text {
     display: block;
+    margin-top: 4px;
+    font-size: 14px;
 }
