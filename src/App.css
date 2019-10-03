@@ -1,4 +1,6 @@
 .App {
   background-color: purple;
   min-height: 100vh;
+  white-space: nowrap;
+  overflow-x: visible;
 }

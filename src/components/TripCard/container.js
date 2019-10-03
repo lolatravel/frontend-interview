@@ -12,9 +12,19 @@ export class TripCardContainer extends PureComponent {
         trip: null
     };
 
+    formatBookerName() {
+        const { trip } = this.props;
+        return `${trip.bookedBy.firstName} ${trip.bookedBy.lastName}`;
+    }
+
+    formatTravelers() {
+        const { trip } = this.props;
+        return trip.travelers.map(traveler => `${traveler.firstName} ${traveler.lastName}`).join(', ');
+    }
+
     render() {
         const { trip } = this.props;
-        return <TripCardUI trip={trip} />;
+        return <TripCardUI travelers={this.formatTravelers()} bookerName={this.formatBookerName()} trip={trip} />;
     }
 }
 
