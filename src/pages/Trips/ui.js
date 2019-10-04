@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
-import { TripCard, Header } from 'components';
+import { Header } from 'components';
 import { TripType } from '../../constants';
 
 export class TripsUI extends PureComponent {
@@ -23,7 +23,9 @@ export class TripsUI extends PureComponent {
                 <div className="tripsContainer">
                     <div className="tripsColumn">
                         {trips.map(trip => (
-                            <TripCard trip={trip} />
+                            <div className="card">
+                                <text>{trip.name}</text>{' '}
+                            </div>
                         ))}
                     </div>
                 </div>

@@ -2,3 +2,10 @@
     width: 25%;
     background-color: white;
 }
+
+.card {
+    width: 100%;
+    margin-bottom: 8px;
+    height: 200px;
+    background-color: gray;
+}
