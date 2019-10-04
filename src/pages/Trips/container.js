@@ -5,16 +5,21 @@ import { tripsData } from '../../data/trips';
 export class TripsContainer extends PureComponent {
     constructor(props) {
         super(props);
+
         this.state = {
-            trips: tripsData
+            filterType: 'allTrips'
         };
+
+        this.onFilterChange = this.onFilterChange.bind(this);
     }
 
-    filterTrips() {}
+    onFilterChange(type) {
+        this.setState({ filterType: type });
+    }
 
     render() {
-        const { trips } = this.state;
-        return <TripsUI trips={trips} />;
+        const { filterType } = this.state;
+        return <TripsUI filterType={filterType} onFilterChange={this.onFilterChange} trips={tripsData} />;
     }
 }
 
