@@ -4,3 +4,8 @@
   white-space: nowrap;
   overflow-x: visible;
 }
+
+button {
+  border: none;
+  background-color: inherit;
+}

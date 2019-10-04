@@ -6,7 +6,9 @@ import { TripType } from '../../constants';
 
 export class TripsUI extends PureComponent {
     static propTypes = {
-        trips: PropTypes.arrayOf(TripType)
+        trips: PropTypes.arrayOf(TripType),
+        onFilterChange: PropTypes.func.isRequired,
+        filterType: PropTypes.string.isRequired
     };
 
     static defaultProps = {
@@ -14,10 +16,10 @@ export class TripsUI extends PureComponent {
     };
 
     render() {
-        const { trips } = this.props;
+        const { trips, filterType, onFilterChange } = this.props;
         return (
             <>
-                <Header />
+                <Header filterType={filterType} onFilterChange={onFilterChange} />
                 <div className="tripsContainer">
                     <div className="tripsColumn">
                         {trips.map(trip => (

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import XDate from 'xdate';
 import { TripCardUI } from './ui';
 import { TripType } from '../../constants';
 
@@ -22,9 +23,22 @@ export class TripCardContainer extends PureComponent {
         return trip.travelers.map(traveler => `${traveler.firstName} ${traveler.lastName}`).join(', ');
     }
 
+    formatDate() {
+        const { trip } = this.props;
+        const length = new XDate(trip.startDate).diffDays(new XDate(trip.endDate));
+        return `${trip.startDate} - ${trip.endDate} • ${length} nights`;
+    }
+
     render() {
         const { trip } = this.props;
-        return <TripCardUI travelers={this.formatTravelers()} bookerName={this.formatBookerName()} trip={trip} />;
+        return (
+            <TripCardUI
+                date={this.formatDate()}
+                travelers={this.formatTravelers()}
+                bookerName={this.formatBookerName()}
+                trip={trip}
+            />
+        );
     }
 }
 

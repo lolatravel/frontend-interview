@@ -15,3 +15,16 @@ code {
 ul {
   padding-inline-start: 0;
 }
+
+button {
+  border: none;
+  background-color: inherit;
+}
+
+button:active {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}

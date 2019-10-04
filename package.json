@@ -6,7 +6,8 @@
     "lodash": "^4.17.15",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "xdate": "^0.8.2"
   },
   "devDependencies": {
     "eslint": "5.16.0",
