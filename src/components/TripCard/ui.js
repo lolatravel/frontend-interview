@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import './styles.css';
 import PropTypes from 'prop-types';
+import image from '../../assets/img/no-photo-image.png';
 import { TripType } from '../../constants';
 
 export class TripCardUI extends PureComponent {
@@ -22,9 +23,9 @@ export class TripCardUI extends PureComponent {
         const { trip, bookerName, travelers, date } = this.props;
         return (
             <div className="tripCard">
-                <img className="tripImage" src={trip.image} alt="trip" />
+                <img className="tripImage" src={trip.image || image} alt="trip" />
                 <h3 className="nameText">{trip.name}</h3>
-                <p className="datesp">{date}</p>
+                <p className="datesText">{date}</p>
                 <p className="uppercase">Booked By: {bookerName}</p>
                 <p className="uppercase">Travelers: {travelers}</p>
             </div>

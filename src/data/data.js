@@ -143,3 +143,9 @@ export const tripsData = [
         ]
     }
 ];
+
+export const currentUser = {
+    id: '657354624562456542',
+    firstName: 'Current',
+    lastName: 'User'
+};

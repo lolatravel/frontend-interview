@@ -3,7 +3,8 @@
     padding: 18px;
     border-bottom: 1px solid #888;
     background-color: white;
-    box-sizing: border-box
+    box-sizing: border-box;
+    overflow-wrap: hidden;
 }
 
 .tripImage {
@@ -18,8 +19,9 @@
 
 .uppercase{
     color: #888;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
+    
 }
 
 .datesText {
@@ -32,4 +34,5 @@ p {
     margin-top: 4px;
     margin-bottom: 0;
     font-size: 14px;
+    white-space: pre-wrap;
 }
