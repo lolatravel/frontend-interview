@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import XDate from 'xdate';
 import { TripCardUI } from './ui';
 import { TripType } from '../../constants';
 
@@ -28,8 +27,8 @@ export class TripCardContainer extends PureComponent {
 
     formatDate() {
         const { trip } = this.props;
-        const length = new XDate(trip.startDate).diffDays(new XDate(trip.endDate));
-        return `${trip.startDate} - ${trip.endDate} • ${length} nights`;
+        const length = (new Date(trip.endDate) - new Date(trip.startDate)) / (1000 * 3600 * 24);
+        return `${trip.startDate} - ${trip.endDate} • ${length} night${length > 1 ? 's' : ''}`;
     }
 
     render() {

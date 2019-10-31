@@ -3,7 +3,7 @@ export const tripsData = [
         id: '1235324321',
         name: 'San Francisco Trip',
         startDate: 'Sun, 5/21',
-        endDate: 'Sun, 5/24',
+        endDate: 'Sun, 5/22',
         bookedBy: {
             id: '124123123123',
             firstName: 'Jamie',
