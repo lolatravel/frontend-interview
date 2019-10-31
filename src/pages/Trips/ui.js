@@ -24,7 +24,7 @@ export class TripsUI extends PureComponent {
                     <div className="tripsColumn">
                         {trips.map(trip => (
                             <div className="card">
-                                <text>{trip.name}</text>{' '}
+                                <p>{trip.name}</p>{' '}
                             </div>
                         ))}
                     </div>
