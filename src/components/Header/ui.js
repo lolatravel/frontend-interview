@@ -22,24 +22,24 @@ export class HeaderUI extends PureComponent {
                     <div className="verticallyCentered">
                         <ul className="menuList">
                             <li>
-                                <text
+                                <p
                                     onClick={() => {
                                         onFilterChange('allTrips');
                                     }}
                                     className={`menuItem ${filterType === 'allTrips' && 'underline'}`}
                                 >
                                     ALL TRIPS
-                                </text>
+                                </p>
                             </li>
                             <li>
-                                <text
+                                <p
                                     onClick={() => {
                                         onFilterChange('myTrips');
                                     }}
                                     className={`menuItem ${filterType === 'myTrips' && 'underline'}`}
                                 >
                                     MY TRIPS
-                                </text>
+                                </p>
                             </li>
                         </ul>
                     </div>
