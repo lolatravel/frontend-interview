@@ -1,11 +1,31 @@
-.App {
-  background-color: purple;
-  min-height: 100vh;
-  white-space: nowrap;
-  overflow-x: visible;
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  padding-inline-start: 0;
 }
 
 button {
   border: none;
   background-color: inherit;
+}
+
+button:active {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.App {
+  background-color: #7c2a8b;
+  min-height: 100vh;
+  white-space: nowrap;
+  overflow-x: visible;
 }
